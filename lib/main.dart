@@ -4,9 +4,13 @@
 
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(
-    MaterialApp(
+void main() => runApp(HelloRectangleApp());
+
+class HelloRectangleApp extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Hello Rectangle',
       home: Scaffold(
@@ -15,8 +19,8 @@ void main() {
         ),
         body: HelloRectangle(),
       ),
-    ),
-  );
+    );
+  }
 }
 
 class HelloRectangle extends StatelessWidget {
